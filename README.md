@@ -1,4 +1,4 @@
-## 🌌 Physically-Based Ray Tracing & Celestial Mechanics
+##  Physically-Based Ray Tracing & Celestial Mechanics
 A C++ simulation engine that combines Whitted-style ray tracing with Newtonian gravitational dynamics.
 
 Core Features :
