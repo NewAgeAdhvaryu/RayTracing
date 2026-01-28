@@ -1,4 +1,4 @@
-#include<SDL2/SDL.h>
+#include "planet.h"
 #include<vector>
 class Ray{
    
@@ -53,3 +53,4 @@ for (float angle = 0; angle <= 2*PI; angle += 0.05) {
 }
 }
 };
+
