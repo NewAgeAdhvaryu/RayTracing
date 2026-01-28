@@ -7,8 +7,6 @@
 #define Win_width 900
 #define Win_height 800
 
-using namespace std;
-
 #define PI 3.141528
 
 
@@ -19,7 +17,7 @@ int main(){
 
     if (ini < 0)
     {
-        cout << "Error in Initializing :" << SDL_GetError() << endl;
+        std::cout << "Error in Initializing :" << SDL_GetError() << std::endl;
         return 1;
     }
     
@@ -30,7 +28,7 @@ int main(){
     
     if (!win)
     {
-        cout << "Error in creating Window :" << SDL_GetError() << endl;
+        std::cout << "Error in creating Window :" << SDL_GetError() << std::endl;
         return 1;
     }
     SDL_Renderer *ren = SDL_CreateRenderer(win,-1,SDL_RENDERER_ACCELERATED);
@@ -77,7 +75,7 @@ int main(){
                 
                 P.Body(ren,400 - (a*ecc),400);
                 SDL_SetRenderDrawColor(ren,255,0,0,255);
-                
+            
                 E.Body(ren,x,y);
                 SDL_SetRenderDrawColor(ren,255,255,0,150);
                 r.GenRay(ren,400 - (a*ecc),400,x,y,r2,x,y,400 - (a*ecc),400);
@@ -101,8 +99,3 @@ int main(){
 
     return 0;
 }
-
-
-
-
-
