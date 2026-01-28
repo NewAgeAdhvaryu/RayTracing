@@ -1,8 +1,8 @@
 #define SDL_MAIN_HANDLED
 #include<iostream>
 
-#include "planet.h"
-#include "ray.h"
+#include "include/planet.h"
+#include "include/ray.h"
 
 #define Win_width 900
 #define Win_height 800
@@ -14,7 +14,7 @@ using namespace std;
 
 int main(){
 
-    //SDL Initialisation
+    
     int ini = SDL_Init(SDL_INIT_EVERYTHING);
 
     if (ini < 0)
@@ -101,6 +101,7 @@ int main(){
 
     return 0;
 }
+
 
 
 
